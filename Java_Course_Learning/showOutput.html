@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show Output</title>
+
+    <script lang="javascript">
+        function showBox()
+        {
+            var x = document.showFrame.n.value;
+            var y = document.showFrame.a.value;
+            var z = document.showFrame.e.value;
+
+            if(isNaN(x) && x != null)
+            {
+                if((isFinite(y)&&y!=null) && (y!=0&&checkAge(y)))
+                {
+                    if(checkEmail(z))
+                    {
+                        alert("Valid summiting.....");
+                    }
+                    else
+                    {
+                        alert("Invalid Email!! \n Please retype your email.");
+                    }
+                }
+                else
+                {
+                    alert("Please type the age between 10 and 50.");
+                }
+            }
+            else
+            {
+                alert("Invalid name!!\n Please retype your name.");
+            }
+        }
+
+        function checkEmail(getEmail)
+        {
+            var temString = getEmail;
+            if(temString.indexOf('@')>=1)
+            {
+                var index = temString.indexOf('@');
+                var middle = temString.substring(index+1,temString.length);
+                if(middle.indexOf('.')>=1)
+                {
+                    var index2 = middle.indexOf('.');
+                    var last = middle.substring(index2+1,middle.length);
+                    if(last.length>=1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        function checkAge(getAge)
+        {
+            if(getAge  >= 10 || getAge <= 50)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="showFrame">
+        <h4>Java Script Form Element Page Demo</h4>
+        <table cellspacing="10">
+            <tr>
+                <td>Name(*)</td>
+                <td><input type="text" name="n" value="Enter your name" size="20" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>AGE(*)</td>
+                <td><input type="text" name="a" value="Enter your age" size="20" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td>E_MAIL(*)</td>
+                <td><input type="text" name="e" value="Enter your email" size="20" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td>(*)mandatory fields</td>
+                <td>
+                    <input type="submit" name="sub" value="submit" onclick="showBox()">
+                    <input type="reset" name="re" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

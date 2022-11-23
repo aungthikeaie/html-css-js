@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User name and password</title>
+
+    <script lang="text/javascript">
+        function oon()
+        {
+            var username = "ongsikeaie";
+            var password = "12345";
+            if((document.myForm.un.value).length < 8)
+                window.alert("Type the username more than 8 characters.");
+            else
+            {
+                if(username == document.myForm.un.value && password == document.myForm.pass.value)
+                    window.alert("Username and Password are correct !");
+                else
+                    window.alert("Username and Password are not correct !");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm">
+        <h3>Login Screen</h3>
+        Username : <input type="text" name="un">
+        <br>
+        Password : <input type="password" name="pass">
+        <br>
+        <input type="submit" value="Submit" onclick="oon()">
+        <input type="reset">
+    </form>
+</body>
+</html>

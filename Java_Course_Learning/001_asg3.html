@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <script lang="text/javascript">
+        function doing(indicator)
+        {
+            var a = parseInt(document.myform.num1.value);
+            var b = parseInt(document.myform.num2.value);
+
+            switch(indicator)
+            {
+                case '+' : document.myform.res.value = (a+b); break;
+                case '-' : document.myform.res.value = (a-b); break;
+                case '*' : document.myform.res.value = (a*b); break;
+                case '/' : document.myform.res.value = (a/b); break;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <b>Java Script Form Calculator Page Demo</b>
+        <br><br><br>
+        Num1 <input type="text" name="num1" size="20">
+        <br><br>
+        Num2 <input type="text" name="num2" size="20">
+        <br><br>
+        <input type="button" name="adding" value="Add" onclick="doing('+')">&nbsp;
+        <input type="button" name="subing" value="Subtract" onclick="doing('-')">&nbsp;
+        <input type="button" name="muling" value="Multiply" onclick="doing('*')">&nbsp;
+        <input type="button" name="diving" value="Divide" onclick="doing('/')">
+        <br><br>
+        Result <input type="text" name="res" size="20" disabled="true">
+
+    </form>
+</body>
+</html>

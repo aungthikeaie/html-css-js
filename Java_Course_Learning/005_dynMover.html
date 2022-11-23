@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Mover</title>
+    <script>
+    function moveIt(movee,x,y)
+    {
+        document.getElementById(movee).style.left = x + "px";
+        document.getElementById(movee).style.top = y + "px";
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>X-Coordinate : </td>
+                <td><input type="text" size="3" id="xxx"></td>
+            </tr>
+            <tr>
+                <td>Y-Coordinate : </td>
+                <td><input type="text" size="3" id="yyy"></td>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Move Photo" onclick="moveIt('testImg' , document.getElementById('xxx').value , document.getElementById('yyy').value)">
+        <div style="position: absolute; left: 0px; top: 150px" id="testImg">
+            <img src="Aurora.jpg" alt="Photo of Aurora">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter Testing</title>
+    <style>
+    ul{
+        counter-reset: section;
+        list-style-type: none;
+    }
+    li::before {
+        counter-increment: section;
+        content: counters(section,".") " ";
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Bronya</li>
+        <li><ul>
+                <li>Physic</li>
+                <li>FuHa</li>
+                <li>Eistine</li>
+        </ul></li>
+        <li>Himeko</li>
+        <li>Kiana</li>
+    </ul>
+    <ul>
+        <li>Mech</li>
+        <li>Bio</li>
+    </ul>
+</body>
+</html>

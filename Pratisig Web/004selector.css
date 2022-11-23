@@ -1,0 +1,53 @@
+/* element selector */
+p {
+    padding: 10px;
+}
+
+/* class selector */
+.browser {
+    background: cyan;
+}
+
+/* id selector */
+#popular {
+    font-weight: bold;
+}
+
+/* attribute selector */
+input[type=text] {
+    width: 400px;
+}
+
+/* group selector */
+h1, h2, h3 {
+    background-color: aquamarine;
+}
+
+/* Descendant selector */
+ol li {
+    padding: 20px;
+    border: 1px solid red;
+}
+
+/* Child selector */
+ul > li {
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+/* Pseudo selector */
+ul.psu li:first-child {
+    font-weight: bold;
+}
+
+ul.psu li:last-child {
+    font-style: italic;
+}
+
+ul.psu li:nth-child(3) {
+    color: red;
+}
+
+ul.psu li:nth-child(2n) {
+    background-color: cyan;
+}

@@ -1,0 +1,8 @@
+.box1 {
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(90deg, cyan, green); /* background: url("image path"); */
+    border-radius: 600px 600px;
+    margin: 10px auto;
+    cursor: crosshair; /* pointer, move, type, wait */
+}

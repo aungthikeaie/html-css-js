@@ -1,0 +1,25 @@
+/*
+div, span {
+    background-color: cyan;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+} */
+
+.wrap {
+    display: flex;
+}
+
+.wrap div {
+    flex-grow: 1; /* like width declaraiton */
+    height: 100px;
+    margin: 10px;
+    background-color: cyan;
+    text-align: center;
+    line-height: 100px; /* The distance to display the content form the top of the box. */
+}
+
+.wrap div:first-child {
+    flex-grow: 3;
+}

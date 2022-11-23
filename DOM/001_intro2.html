@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding Some text</title>
+    <script type="text/javascript">
+    function more_text()
+    {
+        var divObj = document.getElementById("div1");
+        var pp = document.createElement("p");
+        var txt = document.createTextNode("and here is another.");
+        pp.appendChild(txt);
+        divObj.appendChild(pp);
+    }
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <p>Here is some text</p>
+        <input type="button" value="more text" onclick="more_text()">
+    </div>
+</body>
+</html>

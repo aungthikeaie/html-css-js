@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A title</title>
+    <script type="text/javascript">
+    function showall(obj)
+    {
+        var str="";
+        if(obj.childNodes.length != 0)
+        {
+            str="<ul>"
+            for(var i = 0 ; i < obj.childNodes.length ; i++)
+            {
+                if(obj.childNodes[i].tagName != undefined)
+                {
+                    str += "<li>"+obj.childNodes[i].tagName+"</li>";
+                    str += showall(obj.childNodes[i]);
+                }
+            }
+            str += "</ul>";
+        }
+        return(str);
+    }
+    </script>
+</head>
+<body>
+    <h3>A heading</h3>
+    <p>This is a small <em>paragraph</em>.</p>
+    <p>And this is another one.</p>
+    <input type="button" value="Show objects" onclick="document.write(showall(document))">
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dyanmic Validator</title>
+    <script type="text/javascript">
+    function chkName()
+    {
+        var myName = document.getElementById("name");
+        var pos = myName.value.search(/^[A-Z]{1}[a-z]{3}/);
+        if(pos != 0)
+        {
+            window.alert("The name you entered ("+myName.value +
+            ") is not in the correct form.\n " +
+            "The correct form is: " +
+            "last-name, first-name, middle-initial \n" +
+            "Please go back and fix your name");
+            myName.focus();
+            myName.select();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    function chkPhone()
+    {
+        var myPhone = document.getElementById("phone");
+        var pos = myPhone.value.search(/^\d{3}-\d{3}-\d{4}$/);
+        if(pos !=0)
+        {
+            window.alert("The phone number you entered ("+myPhone.value +
+            ") is not in the correct form. \n" +
+            "The correct form is: ddd-ddd-dddd \n" +
+            "Please go back and fix your phone number");
+            myPhone.focus();
+            myPhone.select();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="">
+        <h3 style="font-family: 'Times New Roman', Times, serif">Customer Information</h3>
+        <br>
+        <input type="text" id="name" onchange="chkName()">
+        Name (last name, first name, middle initial)
+        <br><br>
+        <input type="text" id="phone" onchange="chkPhone()">
+        Phone number (ddd-ddd-dddd)
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+    <script type="text/javascript">
+        //document.getElementById("name").onchange = chkName();
+        //document.getElementById("phone").onchange = chkPhone();
+    </script>
+</body>
+</html>

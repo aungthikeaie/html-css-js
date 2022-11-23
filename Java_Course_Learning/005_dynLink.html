@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Link</title>
+</head>
+<style>
+#p1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
+.sp1
+{
+    color: blue;
+    font: normal 16pt Times;
+}
+</style>
+
+<script>
+function outt()
+{
+    var aa = document.getElementById("ss1");
+    aa.style.color = 'blue';
+    aa.style.font = 'normal 16pt Times';//In short notation
+}
+</script>
+
+<body>
+    <p id="p1">The state of 
+        <!-- Can only use in the form of short notation -->
+        <a class="sp1" id="ss1" onmouseover="this.style.color='red'; this.style.font='italic 16pt Times'" onmouseout=outt()>Washington</a> 
+        produces many apples.
+    </p>
+</body>
+</html>

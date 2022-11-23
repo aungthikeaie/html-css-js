@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Example</title>
+    
+    <script>
+        function checkeda()
+        {
+            if(document.f1.elements[0].checked)
+                document.f1.show.value="Correct.";
+            else  
+                document.f1.show.value="Not Correct!";
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <h1>Please answer the question</h1><br><br>
+        <h2>What is my favorite pet?</h2>
+        <input type="radio" name="pet">cat<br>
+        <input type="radio" name="pet">dog<br>
+        <input type="radio" name="pet">bird<br>
+        <input type="radio" name="pet">rabbit<br>
+        <input type="button" name="check" value="check" onClick=checkeda()>
+        <input type="reset"><br><br>
+        <input type="text" name="show">
+    </form>
+    
+</body>
+</html>

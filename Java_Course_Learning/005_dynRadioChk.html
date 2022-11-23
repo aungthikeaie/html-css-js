@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Radio Check</title>
+    <script type="text/javascript">
+    function planeChoice()
+    {
+        if(document.haha.planeButton[1].checked)
+            window.alert("Your choice is true");
+        else
+            window.alert("Your choice is false");
+    }
+    </script>
+</head>
+<body>
+    <form name="haha">
+        <h4>Cessna single-engine airplane descriptions</h4>
+        <br>
+        <input type="radio" name="planeButton">Model 152
+        <br>
+        <input type="radio" name="planeButton">Model 172(Skyhawk)
+        <br>
+        <input type="radio" name="planeButton">Model 182(Skylane)
+        <br>
+        <input type="radio" name="planeButton">Model 210 (Centurian)
+        <br>
+        <input type="button" name="hh" value="OK" onclick="planeChoice()"> 
+    </form>
+</body>
+</html>

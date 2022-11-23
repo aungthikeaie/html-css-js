@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="addressForm">
+        <table border="1px">
+            <tr>
+                <td>
+                    Name : <input type="text" name="name"></td></br>
+                </td>
+            </tr>    
+            <tr>
+                <td>
+                    Email : <input type="text" name="email"></br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone : <input type="text" name="phone"><br>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Go" onclick="window.alert('Hello '
+            + document.addressForm.name.value+'\n'
+            + document.addressForm.email.value+'\n'
+            + document.addressForm.phone.value);">
+    </form>
+</body>
+</html>

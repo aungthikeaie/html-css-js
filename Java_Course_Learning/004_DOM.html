@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <ul>
+        <li>Apple</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        var c = document.querySelector("input");
+        var ul = document.querySelector("ul");
+        var li = document.querySelector("li");
+        // c.addEventListener("keypress",function(e)
+        // {
+        //     console.log(e);
+        // });
+        
+            c.addEventListener("keypress",function(e)
+            {
+                if(e.which==13){
+                   
+                    var txt = this.val();
+                   li.innerHTML("<li>"+txt+"</li>");
+                   ul.append(li);
+
+                
+
+
+                }
+            });
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Question</title>
+
+    <script lang="text/javascript">
+        function chea()
+        {
+            if(document.myForm.elements[0].checked)
+                document.myForm.t1.value = "Correct !!";
+            else
+                document.myForm.t1.value = "Not Correct !!";
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm">
+        <h3>What is my favorite pet?</h3>
+        <input type="radio" name="que">CAT
+        <br>
+        <input type="radio" name="que">DOG
+        <br>
+        <input type="radio" name="que">FISH
+        <br>
+        <input type="radio" name="que">BIRD
+        <br>
+        <input type="button" name="b1" value="check" onclick="chea()">
+        <input type="reset" value="reset">
+        <hr width="20%" align="left" size="1">
+        <input type="text" name="t1" disabled="true" size="20">
+    </form>
+</body>
+</html>

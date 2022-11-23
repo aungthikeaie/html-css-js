@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img
+        {
+            transition: 500ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <img src="Aurora.jpg" alt="LIght" width="200px">
+    <button>Click</button>
+    <a href="http://www.facebook.com"></a>
+
+    <script type="text/javascript">
+        var i = document.getElementsByTagName("img");
+        i[0].addEventListener("mouseover",function()
+        {
+            this.style.width="500px";
+        });
+        i[0].addEventListener("mouseout",function()
+        {
+            this.style.width="200px";
+        })
+        var flag = 0;
+        var btn = document.querySelector("button");
+        btn.addEventListener("click",function(){
+            
+            if(flag == 0)
+            {
+                i[0].setAttribute("src","fruits.jpg");
+                flag=1;    
+            }
+            else
+            {
+                i[0].setAttribute("src","Aurora.jpg");
+                flag=0;
+            }
+                
+            
+
+        });
+    </script>
+</body>
+</html>

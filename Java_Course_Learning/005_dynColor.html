@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Colors</title>
+    <style>
+    p
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24pt;
+        font-style: italic;
+    }
+    </style>
+    
+    <script type="text/javascript">
+    function setColor(where,newColor)
+    {
+        if(where == 'background')
+            document.body.style.backgroundColor = newColor;
+        else
+            document.body.style.color = newColor;
+    }
+    </script>
+</head>
+<body>
+    <p>This small page illustrates dynamic setting of the foreground and background colors for a document</p>
+    <form action="">
+    <table>
+        <tr>
+            <td>Background color : </td>
+            <td><input type="text" id="t1" size="10" onchange="setColor('background', this.value)"></td>
+        </tr>
+        <tr>
+            <td>Foreground color : </td>
+        <td><input type="text" id="t2" size="10" onchange="setColor('foregound', this.value)"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

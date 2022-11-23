@@ -1,0 +1,41 @@
+body {
+    height: 2000px;
+}
+
+.box1 {
+    width: 300px;
+    height: 200px;
+    position: absolute; /* position: fixed; fixed to the window */
+    background-color: cyan;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.box2 {
+    width: 300px;
+    height: 200px;
+    position: absolute; /* fix to the closet relative position */
+    background-color: gold;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+}
+
+.box3 {
+    width: 600px;
+    height: 400px;
+    background-color: rgb(80, 16, 230);
+    margin: 20px auto;
+    position: relative;
+}
+
+.box4 {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(248, 3, 154);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

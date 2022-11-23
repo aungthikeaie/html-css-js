@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Test</title>
+    <script type="text/javascript">
+        function displayTime()
+        {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+
+            document.write(h + " hours " + m + " minutes " + s + " seconds<br>");
+
+            var t = d.getTime();
+
+            document.write("Time : " + t +"<br>");
+
+            var dd = d.getDate();
+
+            document.write("Today Date : " + dd + "<br>");
+
+            var mm = d.getMonth()+1;
+
+            document.write("This Month : " + mm + "<br>");
+
+            var yy = d.getFullYear();
+            if(yy < 1000)
+                yy += 1900;
+
+            document.write("This Year : " + yy + "<br>");
+
+            document.write("Date Object : " + d);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        displayTime();
+        
+        displayTime();
+    </script>
+</body>
+</html>

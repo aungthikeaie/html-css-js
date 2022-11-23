@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Form with Input Group</title>
+    <link rel="stylesheet" href="011formWithInputGroup.css">
+</head>
+<body>
+    <form>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control">
+            <button class="btn btn-secondary">Search</button>
+        </div>
+
+        <label for="address">Enter your gmail address</label>
+        <div class="input-group mb-3">
+            <input type="text" id="address" class="form-control">
+            <span class="input-group-text">@gmail.com</span>
+        </div>
+
+        <label for="price">Enter price</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" id="price" class="form-control">
+        </div>
+
+        <!--
+            input-group : group within the div as inline elements
+            input-group-text : use as a text to display with input-group
+            form-text doesn't contain the border.
+            input-group-text containss border and color.
+        -->
+    </form>
+</body>
+</html>

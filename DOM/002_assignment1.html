@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1</title>
+    <script type="text/javascript">
+    function showMulti()
+    {
+        var numStr = window.prompt("Enter a number to show its multiplication table");
+        var numInt = parseInt(numStr);
+        for(var i = 1; i <=10 ; i++)
+        {
+            var inputt = document.getElementById("input"+i);
+            txt1 = document.createTextNode(numStr);
+            inputt.appendChild(txt1);
+
+            var outputt = document.getElementById("txt"+i);
+            outputt.value = numInt*i;
+        }
+
+
+    }
+    </script>
+    <style>
+    td
+    {
+        height: 50px;
+    }
+    input
+    {
+        top: 0px;
+    }
+    </style>
+</head>
+<body onload="showMulti()">
+    <table border="1px" width="10%">
+        <caption align="bottom"><b>Java Script MULTIPLICATION TABLE</b></caption>
+        <tr><th>X</th><th>Y</th><th>X*Y</th></tr>
+        <tr><td id="input1"></td><td id="loop1">1</td><td><input type="text" id="txt1"></td></tr>
+        <tr><td id="input2"></td><td id="loop2">2</td><td><input type="text" id="txt2"></td></tr>
+        <tr><td id="input3"></td><td id="loop3">3</td><td><input type="text" id="txt3"></td></tr>
+        <tr><td id="input4"></td><td id="loop4">4</td><td><input type="text" id="txt4"></td></tr>
+        <tr><td id="input5"></td><td id="loop5">5</td><td><input type="text" id="txt5"></td></tr>
+        <tr><td id="input6"></td><td id="loop6">6</td><td><input type="text" id="txt6"></td></tr>
+        <tr><td id="input7"></td><td id="loop7">7</td><td><input type="text" id="txt7"></td></tr>
+        <tr><td id="input8"></td><td id="loop8">8</td><td><input type="text" id="txt8"></td></tr>
+        <tr><td id="input9"></td><td id="loop9">9</td><td><input type="text" id="txt9"></td></tr>
+        <tr><td id="input10"></td><td id="loop10">10</td><td><input type="text" id="txt10"></td></tr>
+    </table>
+</body>
+</html>

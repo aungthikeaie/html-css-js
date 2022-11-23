@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib_folder/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1>Lorem, ipsum.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, porro?</p>
+    
+
+    <input type="text" name="tt" id="haha">
+    <ul>
+        
+    </ul>
+    <!-- ////////   With Plain DOM ////////// -->
+    <!-- 
+    <script>
+        var tt = document.querySelector("input");
+        var ul = document.querySelector("#ul");
+        tt.addEventListener("keypress",function(e)
+        {
+            if(e.keyCode == 13)
+            {
+                var li = document.createElement("li");
+                li.innerHTML = tt.value;
+                ul.appendChild(li);
+                tt.value="";
+            }
+        });
+    </script>
+    --> 
+
+    <!-- With Jquery DOM-->
+    <script>
+        $("#haha").on("keypress",function(e)
+        {
+            if(e.which == 13)
+            {
+                var ss = $(this).val();
+                $("ul").append("<li>"+ss+"</li>");
+                $(this).val("");
+            }
+        });
+    </script>
+</body>
+</html>

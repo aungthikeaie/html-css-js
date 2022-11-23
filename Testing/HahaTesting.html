@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing Check Box value</title>
+    <script>
+        function haha(a)
+        {
+            if(a == 1)
+            {
+                var b = parseInt(document.ha.aat.value);
+                b = b+1;
+                document.ha.aat.value = b;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="ha">
+        <input type="button" name="aa" value="UR" onclick="haha(1)">
+        <input type="text" name="aat" value="0"><br><br>
+        <input type="button" name="bb" value="JPB" onclick="haha(2)">
+        <input type="text" name="bbt" value="0" disabled><br><br>
+        <input type="button" name="cc" value="NPB" onclick="haha(3)">
+        <input type="text" name="cct" value="0">
+    </form>
+</body>
+</html>

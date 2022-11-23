@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sense events anywhere</title>
+
+    <script>
+        function displayIt(evt)
+        {
+            var dom = document.getElementById("haha");
+            dom.style.left = (evt.clientX-130)+"px";
+            dom.style.top = (evt.clientY-25) + "px";
+            dom.style.visibility = "visible";
+        }
+        function hideIt()
+        {
+            document.getElementById("haha").style.visibility = "hidden";
+        }
+    </script>
+
+</head>
+<body onmousedown="displayIt(event)" onmouseup="hideIt()">
+    <span id= "haha"  
+            style = "color: red; visibility: hidden;
+                     position: relative;
+                     font-size: 20pt; font-style: italic;
+                     font-weight: bold;">
+         Please don't click here! 
+    </span>  
+    <input type="text" size="30">
+  </body>
+</html>

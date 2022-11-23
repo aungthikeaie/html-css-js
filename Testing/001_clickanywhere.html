@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+            visibility: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            position: relative;
+        }
+    </style>
+    <script>
+        function displayIt(evt)
+        {
+            var aa = document.getElementById("jaja")
+            aa.style.left = (evt.clientX - 130) + "px";
+            aa.style.top = (evt.clientY - 25) + "px";
+            aa.style.visibility = "visible";
+        }
+        function hide()
+        {
+            var aa = document.getElementById("jaja")
+            aa.style.visibility = "hidden";
+        }
+    </script>
+</head>
+<body onmousedown="displayIt(event)" onmouseup="hide()">
+    <div id="jaja">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolores!
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

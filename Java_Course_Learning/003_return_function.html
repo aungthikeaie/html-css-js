@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Return Function</title>
+    <script>
+        function sum(a,b)
+        {
+            return parseInt(a+b);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var a = window.prompt("Enter number 'a' ");
+        var b = parseInt(window.prompt("Enter number 'b' "));
+        var result = sum(a,b);
+        var stg = "a = " + a + "\nb = " + b;
+        window.alert(stg + "\na + b = " + result);
+    </script>
+</body>
+</html>

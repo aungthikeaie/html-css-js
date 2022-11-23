@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Value</title>
+</head>
+<style>
+    span,table
+    {
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    span
+    {
+        font-style: italic; 
+    }
+    #ta1
+    {
+        position: absolute;
+        left: 250px;
+        top: 230px;
+        font-style: italic;
+    }
+</style>
+<script>
+    var helper = new Array();//can be initialized with numbers
+    helper[0] = "Your name must be in the form: \n \ first name, middle initial., last name";
+    helper[1] = "Your email address must have the form: \ user@domain";
+    helper[2] = "Your user ID must have at least six character";
+    helper[3] = "Your password must have at least six \ characters and it must include one digit";
+    helper[4] = "This box provides advice on filling out \ the form on this page. Put the mouse cursor over any \ input field to get advice";
+
+    function haha(indicate)
+    {
+        document.getElementById("ta1").value = helper[indicate];
+        //Can also be used like ==> document.formName.elementName.value
+    }
+</script>
+<body>
+    <form action="">
+    <span>Customer information</span>
+    <br><br>
+    <table>
+        <tr>
+            <td>Name : </td>
+            <td><input type="text" onmouseover="haha(0)" onmouseout="haha(4)"></td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td><input type="text" onmouseover="haha(1)" onmouseout="haha(4)"></td>
+        </tr>
+    </table>
+    <br>
+    <span>create an account, provide the following:</span> 
+    <br><br>
+    <table>
+         <tr>
+            <td>User ID : </td>
+            <td><input type="text" onmouseover="haha(2)" onmouseout="haha(4)"></td>
+        </tr>
+        <tr>
+            <td>Password : </td>
+            <td><input type="text" onmouseover="haha(3)" onmouseout="haha(4)"></td>
+        </tr>
+    </table>
+    <br>
+    <textarea rows="3" cols="50" id="ta1"></textarea>
+    <input type="submit" value="Submit">
+    <input type="reset"  value="Reset">
+    </form>
+</body>
+</html>

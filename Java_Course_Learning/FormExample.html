@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Example</title>
+</head>
+<body>
+    <form name="f1" method="GET">
+        <table border="1" width=40%>
+            <tr>
+                <td>Enter Your Name</td>
+                <td><input type="text" name="nameField" value="Smith" maxlength="50" size="10"></td>
+            </tr>
+            <tr>
+                <td>Enter Your Password</td>
+                <td><input type="password" name="passwordField" value="12345" maxlength="15" size="15"></td>
+            </tr>
+            <tr>
+                <td>Enter your Hobbies</td>
+                <td>
+                    <select name="hobbies" multiple size="3">
+                        <option value="tr">Travel</option>
+                        <option selected>Reading</option>
+                        <option>Sleeping</option>
+                        <option>Eating</option>
+                        <option>Walking</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Notify by email</td>
+                <td><input type="checkbox" name="nbe" checked>Email</td>
+            </tr>
+            <tr>
+                <td>Output Device</td>
+                <td>
+                    <input type="radio" name="outputDevice">Screen
+                    <input type="radio" name="outputDevice">Printer
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="carry"></td>
+                <td><input type="reset" name="clear" value="Clear"></td>
+            </tr>
+            <tr>
+                <td>Text Area</td>
+                <td><textarea cols="40" rows="3">Default text goes here</textarea></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            position : absolute;
+            left : 50px;
+            top : 100px;
+        }
+    </style>
+    <script>
+        function move()
+        {
+            document.getElementById("box").style.left = document.getElementById("x").value + "px";
+            document.getElementById("box").style.top = document.getElementById("y").value + "px";
+        }
+    </script>
+</head>
+<body>
+    X-Coordinate : <input type="text" size="20" id="x"><br>
+    Y-Coordinate : <input type="text" size="20" id="y"><br>
+    Click Here   : <input type="button" value="Move" onclick="move()"><br><br>
+    <div id="box">
+        <img src="Nayeon.jpg" alt="Image of TWICE Im Nayeon" height="275px" width="400px">
+    </div>
+</body>
+</html>

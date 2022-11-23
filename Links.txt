@@ -1,0 +1,17 @@
+Link to use font awesome icons
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+e.g
+<i class="fa fa-car"></i>
+
+Link to use bootstrap icons
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+e.g
+<i class="glyphicon glyphicon-car"></i>
+
+Link to use google icons
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+e.g
+<i class="material-icons">car</i>

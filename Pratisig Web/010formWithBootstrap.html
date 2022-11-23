@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Form with Bootstrap</title>
+    <link rel="stylesheet" href="010formWithBootstrap.css">
+</head>
+<body>
+    <form>
+        <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="address">Address</label>
+            <textarea id="address" class="form-control"></textarea>
+            <div class="form-text">Enter full address</div>
+        </div>
+        <div class="mb-3">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-select">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <!-- We can also use input type submit
+            
+            mb-3 = margin bottom = 3
+            form-control = to enter text
+            form-text = to display text
+            form-select = to know exactly the box can be selected
+
+            <input type="submit" class="btn btn-primary" value="Submit Form">
+        -->
+
+        <button class="btn btn-primary">Submit Form</button>
+    </form>
+</body>
+</html>
